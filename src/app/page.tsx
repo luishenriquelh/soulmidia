@@ -6,8 +6,11 @@ import ImageGallery from "../app/components/ImageGallery";
 export default function Home() {
   return (
     <div>
-        <div className="titulo-left-top">ORGANIZE <span className="titulo-left-top-texto">E</span> SIRVA COM PROPÓSITO</div>
-        
+      <div className="titulo-left-top">
+        ORGANIZE <span className="titulo-left-top-texto">E</span> SIRVA COM
+        PROPÓSITO
+      </div>
+
       <div className="layout-container">
         <main className="main-content">
           <header className="header">
@@ -23,7 +26,10 @@ export default function Home() {
               </div>
             </div>
           </header>
-            "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o seu santo nome."
+          <h1>
+            "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o
+            seu santo nome."
+          </h1>
           <div>
             <ImageGallery />
           </div>
