@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import TypingEffect from "../app/components/TypingEffect";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

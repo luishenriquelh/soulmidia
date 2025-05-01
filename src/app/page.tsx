@@ -3,11 +3,6 @@
 import Image from "next/image";
 import ImageGallery from "../app/components/ImageGallery";
 
-import { DM_Sans } from "next/font/google"; // Importando a fonte DM Sans
-
-// Usando a fonte DM Sans
-const dmSans = DM_Sans({ subsets: ["latin"], weight: "800" });
-
 export default function Home() {
   return (
     <div>
@@ -28,14 +23,10 @@ export default function Home() {
               </div>
             </div>
           </header>
-
-            "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o
-            seu santo nome."
-
+            "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o seu santo nome."
           <div>
             <ImageGallery />
           </div>
-
           <footer className="footer">
             <p>www.soulmidia.com.br</p>
           </footer>
