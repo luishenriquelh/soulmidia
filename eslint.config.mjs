@@ -11,6 +11,13 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    // Adicionando configurações de regras personalizadas
+    rules: {
+      "no-console": "off", // Desabilita a regra no-console (permitindo console.log)
+      "react/no-unused-prop-types": "off", // Desabilita a regra de tipos não usados nas props
+    }
+  }
 ];
 
 export default eslintConfig;
