@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import ImageGallery from "../app/components/ImageGallery";
-import TypingEffect from "../app/components/TypingEffect";
 
 import { DM_Sans } from "next/font/google"; // Importando a fonte DM Sans
 
