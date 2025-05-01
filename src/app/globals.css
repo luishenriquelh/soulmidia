@@ -23,4 +23,131 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+                /* Remove qualquer margem padrão */
+}
+
+.background-logo {
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-attachment: fixed; /* A imagem de fundo fica fixa ao rolar a página */
+  height: 100vh; /* Garante que o fundo cubra 100% da altura da tela */
+  width: 100%; /* Garante que o fundo cubra 100% da largura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Para o texto ser visível sobre o fundo */
+  text-align: center; /* Centraliza o texto */
+}
+
+.titulo-left-top {
+  position: absolute;
+  top: 0;        /* Coloca no topo */
+  left: 0;       /* Coloca à esquerda */
+  padding: 10px; /* Adiciona um pouco de padding para dar espaçamento */
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.titulo-left-top-texto {
+  color: #ed3a85;
+}
+
+
+
+.image-container {
+  display: flex; /* Define que o container das imagens será flexível */
+  justify-items: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza as imagens verticalmente */
+  flex-wrap: wrap; /* Permite que as imagens se reorganizem em telas menores */
+}
+
+.image-item {
+  flex: 1; /* Faz com que as imagens ocupem o mesmo espaço */
+  max-width: 100%; /* Define o limite máximo de largura das imagens */
+  display: flex;
+  justify-content: center; /* Centraliza as imagens dentro de cada item */
+  align-items: center; /* Alinha as imagens verticalmente */
+}
+
+.image-container-logo {
+  display: grid;
+  place-items: center; /* Centraliza vertical e horizontalmente */
+}
+
+.image-logo {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+
+
+h1 {
+  font-size: 15; /* Tamanho do texto */
+  text-align: center; /* Garante que o texto dentro de h1 seja centralizado */
+}
+
+/* Reset básico para margin e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout da página inteira */
+.layout-container {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em uma coluna */
+  min-height: 100vh; /* Garante que a altura mínima seja 100% da tela */
+
+}
+
+/* Estilos do header (topo) */
+.header {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+/* Estilos do conteúdo principal */
+.main-content {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço restante */
+  padding: 20px;
+
+}
+
+/* Estilos do footer (rodapé) */
+.footer {
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 1rem;
+  
+}
+
+/* Estilos responsivos - ajusta o layout para telas menores */
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+  }
 }
