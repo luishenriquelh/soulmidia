@@ -27,8 +27,8 @@ export default function Home() {
             </div>
           </header>
           <h1>
-            "Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o
-            seu santo nome."
+          &quot;Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o
+  seu santo nome.&quot;
           </h1>
           <div>
             <ImageGallery />
